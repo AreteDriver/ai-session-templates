@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # CLI Tool Build Template
 
 For building command-line tools from scratch or extending existing ones. Covers the full surface: commands, I/O, error handling, packaging, docs, tests, and CI. Keeps the build grounded in user need rather than feature creep.

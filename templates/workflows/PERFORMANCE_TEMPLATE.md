@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Performance Template
 
 For profiling and optimization work. Forces measurement before and after changes, explicit

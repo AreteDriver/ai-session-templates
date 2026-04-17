@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Refactor Template
 
 Use this when improving code structure without changing intended behavior. Explicitly locks

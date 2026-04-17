@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Template Builder
 
 Use this when none of the existing templates fit the work. This is the template for creating a new reusable session template. It walks through the design decisions so the resulting template is practical, not generic.

@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Work-Specific Template Prompt
 
 A meta-prompt for asking a coding agent to generate a new reusable session template. Use this when you have a repeating work pattern and want the model to draft a structured template you can refine and keep.

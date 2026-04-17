@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Hackathon Sprint Template
 
 For time-boxed delivery with a hard demo deadline. Optimizes for shipping a working demo over

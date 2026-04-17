@@ -18,28 +18,32 @@ The goal is to make AI-assisted engineering work more reliable, reviewable, and 
 ## Repo structure
 
 ```text
+.github/
+  workflows/
+    ci.yml                       # template validation (links, codeblocks)
 docs/
-  overview.md                  # philosophy and design principles
-  usage-guide.md               # how to pick, fill, and use templates
-  best-practices.md            # session discipline and anti-patterns
-  naming-conventions.md        # file naming and folder rules
-  extension-guide.md           # how to add or archive templates
+  overview.md                    # philosophy and design principles
+  usage-guide.md                 # how to pick, fill, and use templates
+  best-practices.md              # session discipline and anti-patterns
+  naming-conventions.md          # file naming and folder rules
+  extension-guide.md             # how to add or archive templates
+  integration.md                 # wiring templates into Claude Code sessions
 templates/
   master/
-    MASTER_SESSION_TEMPLATE.md # universal session bootstrap
+    MASTER_SESSION_TEMPLATE.md   # universal session bootstrap
   workflows/
-    BUGFIX_TEMPLATE.md         # debugging and root cause
-    FEATURE_BUILD_TEMPLATE.md  # adding new functionality
-    REFACTOR_TEMPLATE.md       # improving code without changing behavior
-    CI_AUTOMATION_TEMPLATE.md  # pipelines, scripts, release flows
-    DOCS_HARDENING_TEMPLATE.md # README, setup, onboarding clarity
-    REPO_REVIEW_TEMPLATE.md    # architecture and quality audit
+    BUGFIX_TEMPLATE.md           # debugging and root cause
+    FEATURE_BUILD_TEMPLATE.md    # adding new functionality
+    REFACTOR_TEMPLATE.md         # improving code without changing behavior
+    CI_AUTOMATION_TEMPLATE.md    # pipelines, scripts, release flows
+    DOCS_HARDENING_TEMPLATE.md   # README, setup, onboarding clarity
+    REPO_REVIEW_TEMPLATE.md      # architecture and quality audit
     RESEARCH_COMPARISON_TEMPLATE.md  # evaluating options
     MIGRATION_TEMPLATE.md        # DB migrations, framework upgrades
     SECURITY_REVIEW_TEMPLATE.md  # OWASP checklist, dependency audit
     PERFORMANCE_TEMPLATE.md      # profiling and optimization
   builders/
-    TEMPLATE_BUILDER.md        # create a new template from scratch
+    TEMPLATE_BUILDER.md          # create a new template from scratch
     WORK_SPECIFIC_TEMPLATE_PROMPT.md  # meta-prompt for the model
   custom/
     REPO_CREDIBILITY_TEMPLATE.md     # interview prep, OSS polish
@@ -51,6 +55,8 @@ templates/
     DEPLOY_TEMPLATE.md               # Fly.io/Vercel deployment sessions
     HACKATHON_SPRINT_TEMPLATE.md     # time-boxed delivery with deadline
     TEST_COVERAGE_TEMPLATE.md        # targeted coverage improvement
+  community/
+    README.md                    # submission guidelines
 examples/
   example_bugfix_session.md          # SQLite WAL deadlock diagnosis
   example_feature_session.md         # webhook subscription endpoints
@@ -109,3 +115,7 @@ Most coding-agent failures start before the model writes any code.
 They start with weak session setup.
 
 This repo is a lightweight operating system for preventing that.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to submit templates, style guide, and PR process.

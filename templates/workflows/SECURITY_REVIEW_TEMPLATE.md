@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Security Review Template
 
 For structured security audits and hardening sessions. Covers OWASP Top 10, dependency vulnerabilities,

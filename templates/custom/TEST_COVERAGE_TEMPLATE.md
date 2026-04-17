@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Test Coverage Template
 
 For targeted test coverage improvement sessions. Focuses effort on the highest-ROI files first

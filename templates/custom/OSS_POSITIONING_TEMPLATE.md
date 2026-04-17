@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # OSS Positioning Template
 
 For framing a repository so it reads as credible, purposeful, and adoptable to its target audience. This is not about marketing. It is about making the repo's value legible to someone who has thirty seconds and no prior context.

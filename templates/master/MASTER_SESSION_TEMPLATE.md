@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Master Session Template
 
 Use this at the start of any coding session to give the agent a stable operating frame.

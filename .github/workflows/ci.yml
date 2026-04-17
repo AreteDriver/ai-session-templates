@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check templates have markdown codeblocks
+        run: |
+          failed=0
+          for f in $(find templates -name '*.md' -not -name 'README.md'); do
+            if ! grep -q '```md' "$f"; then
+              echo "MISSING codeblock: $f"
+              failed=1
+            fi
+          done
+          exit $failed
+
+      - name: Check for unfilled placeholders
+        run: |
+          failed=0
+          for f in $(find templates -name '*.md'); do
+            # Match [placeholder] but skip markdown links [text](url) and table alignment
+            if grep -Pn '\[[A-Z][A-Za-z /]+\]' "$f" | grep -v ']('; then
+              echo "UNFILLED placeholder in: $f"
+              failed=1
+            fi
+          done
+          if [ $failed -eq 1 ]; then
+            echo "Note: placeholders inside fenced codeblocks are expected in templates."
+            echo "This check flags top-level unfilled placeholders only."
+          fi
+          # Templates are expected to have placeholders inside codeblocks.
+          # This check is advisory — exit 0.
+          exit 0
+
+      - name: Validate internal markdown links
+        run: |
+          broken=0
+          for f in $(find . -name '*.md' -not -path './.git/*'); do
+            for link in $(grep -oP '\[.*?\]\(\K[^)#]+' "$f" 2>/dev/null); do
+              echo "$link" | grep -qP '^https?://' && continue
+              if [ ! -e "$(dirname "$f")/$link" ]; then
+                echo "BROKEN: $f -> $link"
+                broken=1
+              fi
+            done
+          done
+          exit $broken

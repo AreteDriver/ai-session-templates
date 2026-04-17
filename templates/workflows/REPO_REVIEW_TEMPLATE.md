@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Repo Review Template
 
 Use this when asking the agent to analyze a repo for interview prep, OSS polish, product

@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Docs Hardening Template
 
 Use this when the task is improving documentation clarity, onboarding experience, or README

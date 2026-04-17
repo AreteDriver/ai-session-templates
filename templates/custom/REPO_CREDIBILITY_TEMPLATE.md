@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Repo Credibility Template
 
 For interview prep, OSS polish, or recruiter-facing credibility audits. Forces a structured review of how a repo reads to someone who has never seen it before and will spend less than two minutes deciding if the author is serious.

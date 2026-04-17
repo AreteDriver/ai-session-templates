@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Research / Comparison Template
 
 Use this when comparing libraries, frameworks, APIs, or technical approaches before making

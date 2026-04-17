@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Bug Fix Template
 
 Use this when debugging a known issue. Forces structured reproduction, root cause isolation,

@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Deploy Template
 
 For deployment sessions targeting Fly.io, Vercel, cloud providers, or any production push.

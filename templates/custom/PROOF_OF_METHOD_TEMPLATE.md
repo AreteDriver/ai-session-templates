@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Proof of Method Template
 
 For demonstrating engineering method through a repo or body of work. Used when the goal is not just shipping code but proving that the process behind the code is disciplined, repeatable, and worth trusting. Applies to interview prep, portfolio positioning, and team credibility.

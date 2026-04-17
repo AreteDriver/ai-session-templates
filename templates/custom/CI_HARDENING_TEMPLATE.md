@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # CI Hardening Template
 
 For tightening CI/CD pipelines — adding missing quality gates, fixing fragile workflows, improving failure visibility, and making the release path reliable. Applies whether the stack is GitHub Actions, GitLab CI, or anything else with a pipeline concept.

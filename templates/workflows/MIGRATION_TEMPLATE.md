@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Migration Template
 
 For database migrations, framework upgrades, API version bumps, and any change that moves a system

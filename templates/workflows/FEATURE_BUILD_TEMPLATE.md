@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # Feature Build Template
 
 Use this when adding new functionality to an existing project. Captures the user need,

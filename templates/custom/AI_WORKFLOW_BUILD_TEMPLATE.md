@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # AI Workflow Build Template
 
 For designing and building agent workflows, multi-step LLM pipelines, or any system where AI models are execution components. Focuses on the parts most people skip: cost controls, failure modes, context management, and governance boundaries.

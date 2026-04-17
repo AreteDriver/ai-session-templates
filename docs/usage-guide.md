@@ -1,5 +1,26 @@
 # Usage Guide
 
+## Template Selection Flowchart
+
+```mermaid
+graph TD
+    Start([Start]) --> Q{What type of work?}
+    Q --> |Bug / error| BUGFIX[BUGFIX_TEMPLATE]
+    Q --> |New feature| FEATURE[FEATURE_BUILD_TEMPLATE]
+    Q --> |Refactor / cleanup| REFACTOR[REFACTOR_TEMPLATE]
+    Q --> |Deploy / release| DEPLOY[DEPLOY_TEMPLATE]
+    Q --> |Tests / coverage| TEST[TEST_COVERAGE_TEMPLATE]
+    Q --> |Security / audit| SECURITY[SECURITY_REVIEW_TEMPLATE]
+    Q --> |CI / automation| CI[CI_AUTOMATION_TEMPLATE]
+    Q --> |Migration / upgrade| MIGRATION[MIGRATION_TEMPLATE]
+    Q --> |Performance| PERF[PERFORMANCE_TEMPLATE]
+    Q --> |Docs / README| DOCS[DOCS_HARDENING_TEMPLATE]
+    Q --> |Hackathon / deadline| HACK[HACKATHON_SPRINT_TEMPLATE]
+    Q --> |Review / audit| REVIEW[REPO_REVIEW_TEMPLATE]
+    Q --> |OSS positioning| OSS[OSS_POSITIONING_TEMPLATE]
+    Q --> |Unclear| MASTER[MASTER_SESSION_TEMPLATE]
+```
+
 ## Step 1: Choose the Closest Template
 
 | Folder | When to use |

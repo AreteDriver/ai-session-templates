@@ -1,3 +1,8 @@
+---
+version: "1.0.0"
+updated: "2026-04-17"
+---
+
 # CI / Automation Template
 
 Use this when working on GitHub Actions, deployment scripts, release flows, or any pipeline
