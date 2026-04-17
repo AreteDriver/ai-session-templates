@@ -72,3 +72,35 @@ This fires a reminder before the first tool use in a session. It does not block 
 | Solo, daily use | Option 2 (CLAUDE.md) |
 | Team standardization | Option 3 (skill) |
 | Enforcement without friction | Option 4 (hook) |
+
+## Per-Session Toolkit
+
+The session templates define structure. These tools add instrumentation -- measuring context quality, output quality, cost, and cross-session continuity. All are optional. The session-start and session-end skills in `ai-skills` gracefully skip any tool that is not installed.
+
+| Tool | Phase | What it does | Install |
+|------|-------|-------------|---------|
+| anchormd | start | Audits CLAUDE.md quality (0-100 score) | `pip install anchormd` |
+| memboot | start | Local codebase context retrieval | `pip install memboot` |
+| fleet-monitor | start | Service health checks before you begin | Project-specific |
+| Animus MCP | start + end | Persistent memory and task tracking across sessions | MCP server config |
+| context-hygiene | mid-session | Measures context window bloat | `pip install context-hygiene` |
+| drift-monitor | mid-session | Detects output quality degradation over long sessions | `pip install driftmonitor` |
+| signal-audit | end | Scores AI output for signal-to-noise ratio | `pip install signal-audit` |
+| content-scrubber | end | Removes AI-generated patterns from content | Claude Code skill |
+| ai-spend | end | Reports token usage and cost per session | `pip install ai-spend` |
+| promptctl | end | Versions and stores effective prompts | `pip install promptctlai` |
+
+### Where to start
+
+None of these are required to use the templates effectively. If you want to add instrumentation incrementally, two tools deliver the most immediate value:
+
+1. **anchormd** -- measures the quality of your CLAUDE.md, which directly controls how well the agent understands your project. A weak CLAUDE.md means every session starts at a disadvantage. This is the single highest-leverage improvement for solo developers.
+
+2. **signal-audit** -- scores the output you receive from the agent. Without measurement, you cannot tell if your templates and prompts are actually improving results. This closes the feedback loop.
+
+### For teams
+
+If you run multiple services or coordinate across sessions, two additional tools are worth the setup cost:
+
+- **fleet-monitor** adds service-awareness to session start. The agent knows which services are healthy before it begins work, avoiding wasted effort on broken dependencies.
+- **Animus MCP** provides cross-session memory. Decisions, patterns, and task state persist between sessions instead of being re-discovered each time. This compounds -- the tenth session is significantly more productive than the first.
