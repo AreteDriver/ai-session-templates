@@ -35,6 +35,9 @@ templates/
     DOCS_HARDENING_TEMPLATE.md # README, setup, onboarding clarity
     REPO_REVIEW_TEMPLATE.md    # architecture and quality audit
     RESEARCH_COMPARISON_TEMPLATE.md  # evaluating options
+    MIGRATION_TEMPLATE.md        # DB migrations, framework upgrades
+    SECURITY_REVIEW_TEMPLATE.md  # OWASP checklist, dependency audit
+    PERFORMANCE_TEMPLATE.md      # profiling and optimization
   builders/
     TEMPLATE_BUILDER.md        # create a new template from scratch
     WORK_SPECIFIC_TEMPLATE_PROMPT.md  # meta-prompt for the model
@@ -45,11 +48,20 @@ templates/
     OSS_POSITIONING_TEMPLATE.md      # public repo framing
     CI_HARDENING_TEMPLATE.md         # tightening quality gates
     PROOF_OF_METHOD_TEMPLATE.md      # proving engineering discipline
+    DEPLOY_TEMPLATE.md               # Fly.io/Vercel deployment sessions
+    HACKATHON_SPRINT_TEMPLATE.md     # time-boxed delivery with deadline
+    TEST_COVERAGE_TEMPLATE.md        # targeted coverage improvement
 examples/
   example_bugfix_session.md          # SQLite WAL deadlock diagnosis
   example_feature_session.md         # webhook subscription endpoints
   example_repo_review.md             # developer tool credibility audit
   example_work_specific_template_request.md  # blockchain ingestion template
+  example_migration_session.md         # SQLAlchemy 1.4 → 2.0 upgrade
+  example_security_review.md           # pre-public API security audit
+  example_deploy_session.md            # Fly.io + Litestream first deploy
+  example_master_template_session.md   # multi-step bulk operations
+  example_hackathon_sprint.md          # 72-hour EVE Frontier sprint
+  example_test_coverage_grind.md       # 70% → 80% coverage push
 ```
 
 ## Quick start

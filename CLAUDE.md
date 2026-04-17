@@ -23,7 +23,7 @@ ai-session-templates/
 
 ## Conventions
 
-- **Format**: All templates are markdown inside fenced codeblocks (```md)
+- **Format**: All templates are markdown inside fenced codeblocks
 - **Structure**: Brief description before codeblock, then the copy-paste-ready template
 - **Naming**: SCREAMING_SNAKE_CASE.md for templates, lowercase for examples
 - **Tone**: Precise, practical, engineer-facing. No hype, no filler, no emojis
